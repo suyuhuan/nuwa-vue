@@ -3,9 +3,14 @@
 Nuwa 编辑器是一款专门为非开发人员及运营人员打造的一款可视化可拖拽的编辑器。使用它可以生产出，企业所需要的落地页、h5 页面、可视化界面。
 使用 vue3.0+ ts + jsx 开发
 
-### 效果图如下
+### 启动项目
 
-![alt 效果图](./public/01.png)
+```
+git clone https://github.com/suyuhuan/nuwa-vue.git
+cd nuwa-vue
+npm install
+npm run serve
+```
 
 ### 技术栈
 
@@ -86,11 +91,6 @@ const App = defineComponent({
 export default App
 ```
 
-### 启动项目
+### 效果图如下
 
-```
-git clone https://github.com/suyuhuan/nuwa-vue.git
-cd nuwa-vue
-npm install
-npm run serve
-```
+![alt 效果图](./public/01.png)
