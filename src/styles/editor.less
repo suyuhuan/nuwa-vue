@@ -1,0 +1,54 @@
+@import './variables.less';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#editor {
+    .hearder{
+        position: relative;
+        height: @header-hight;
+        background-color: @gray-900;
+        .tool-area{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color:@tplColor;
+        }
+    }
+    .container{
+        height: @container-hight;
+
+        .render-area,
+        .component-area,
+        .config-area,
+        .render-content {
+            height: @container-hight;
+        }
+        .render-area,
+        .component-area,
+        .config-area{
+            float: left;
+            outline: 1px solid @gray-700;
+        }
+        .component-area,
+        .config-area {
+            width: @block-width;
+        }
+        .component-area {
+            margin-left: -100%;
+        }
+        .config-area {
+            margin-left: -@block-width;
+        }
+        .render-area{
+            width: 100%;
+        }
+        .render-content {
+            margin-left: @block-width;
+            margin-right: @block-width;
+        }
+    }
+}
